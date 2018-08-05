@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FE Heroes Text Simulator", "FE Heroes Text Simulator\FE Heroes Text Simulator.csproj", "{140BDA48-9924-4DDD-9A19-36E08267C6BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{140BDA48-9924-4DDD-9A19-36E08267C6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140BDA48-9924-4DDD-9A19-36E08267C6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140BDA48-9924-4DDD-9A19-36E08267C6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140BDA48-9924-4DDD-9A19-36E08267C6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FDDC5AD-5358-4FF2-80A2-ECF0770AC301}
+	EndGlobalSection
+EndGlobal
