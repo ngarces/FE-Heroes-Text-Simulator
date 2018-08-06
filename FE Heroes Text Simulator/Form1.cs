@@ -17,7 +17,9 @@ namespace FE_Heroes_Text_Simulator
     public partial class Form1 : Form
     {
         public Bitmap backgroundImage;
+        public Bitmap resizedBackground;
         public Bitmap unitImage;
+        public Bitmap resizedUnit;
 
         Lists BGList = new Lists();
 
@@ -48,6 +50,7 @@ namespace FE_Heroes_Text_Simulator
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 unitImage = new Bitmap(ofd.FileName);
+                resizedUnit = resizeImage(unitImage, 1325, 1590);
             }
 
             refresh_Picturebox();
@@ -64,6 +67,7 @@ namespace FE_Heroes_Text_Simulator
             {
                 comboBox_BG.SelectedIndex = 0;
                 backgroundImage = new Bitmap(ofd.FileName);
+                resizedBackground = resizeImage(backgroundImage, (int)(backgroundImage.Width * (1280f / backgroundImage.Height)), 1280);
             }
 
             refresh_Picturebox();
@@ -100,12 +104,11 @@ namespace FE_Heroes_Text_Simulator
             {
                 if (checkBox_ResizeBG.Checked)
                 {
-                    Bitmap resizedImage = resizeImage(backgroundImage, (int)(backgroundImage.Width * (1280f / backgroundImage.Height)), 1280);
-                    g.DrawImage(resizedImage, -(resizedImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedImage.Width, resizedImage.Height);
+                    g.DrawImage(resizedBackground, -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
                 }
                 else
                 {
-                    g.DrawImage(backgroundImage, -(backgroundImage.Width - backgroundImage.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
+                    g.DrawImage(backgroundImage, -(backgroundImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
                 }
                 
             }
@@ -115,12 +118,11 @@ namespace FE_Heroes_Text_Simulator
             {
                 if (checkBox_ResizeUnit.Checked)
                 {
-                    Bitmap resizedImage = resizeImage(unitImage, 1325, 1590);
-                    g.DrawImage(resizedImage, -(resizedImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_UnitX.Value, (float)numericUpDown_UnitY.Value, resizedImage.Width, resizedImage.Height);
+                    g.DrawImage(resizedUnit, -(resizedUnit.Width - pictureBox.Width) / 2f + (float)numericUpDown_UnitX.Value, (float)numericUpDown_UnitY.Value, resizedUnit.Width, resizedUnit.Height);
                 }
                 else
                 {
-                    g.DrawImage(unitImage, -(unitImage.Width - unitImage.Width) / 2f + (float)numericUpDown_UnitX.Value, (float)numericUpDown_UnitY.Value, unitImage.Width, unitImage.Height);
+                    g.DrawImage(unitImage, -(unitImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_UnitX.Value, (float)numericUpDown_UnitY.Value, unitImage.Width, unitImage.Height);
                 }
             }
 
@@ -213,6 +215,7 @@ namespace FE_Heroes_Text_Simulator
             resourceName = resourceName.Replace(")", "_");
             resourceName = resourceName.Replace(".", "_");
             backgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(resourceName);
+            resizedBackground = resizeImage(backgroundImage, (int)(backgroundImage.Width * (1280f / backgroundImage.Height)), 1280);
 
             refresh_Picturebox();
         }
