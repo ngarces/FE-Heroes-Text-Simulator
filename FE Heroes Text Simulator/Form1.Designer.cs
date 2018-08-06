@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.richTextBox_Name = new System.Windows.Forms.RichTextBox();
             this.richTextBox_Line1 = new System.Windows.Forms.RichTextBox();
@@ -356,7 +357,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1107, 749);
+            this.ClientSize = new System.Drawing.Size(1064, 749);
             this.Controls.Add(this.checkBox_ResizeBG);
             this.Controls.Add(this.checkBox_ResizeUnit);
             this.Controls.Add(this.button_ClearUnit);
@@ -383,8 +384,9 @@
             this.Controls.Add(this.richTextBox_Line1);
             this.Controls.Add(this.richTextBox_Name);
             this.Controls.Add(this.pictureBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "FE Heroes Text Simulator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitY)).EndInit();

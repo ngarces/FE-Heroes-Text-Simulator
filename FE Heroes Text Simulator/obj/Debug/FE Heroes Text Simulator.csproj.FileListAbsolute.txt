@@ -8,3 +8,13 @@ C:\Users\ngarc\source\repos\FE Heroes Text Simulator\FE Heroes Text Simulator\ob
 C:\Users\ngarc\source\repos\FE Heroes Text Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.csproj.CoreCompileInputs.cache
 C:\Users\ngarc\source\repos\FE Heroes Text Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.exe
 C:\Users\ngarc\source\repos\FE Heroes Text Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.pdb
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\bin\Debug\FE Heroes Text Simulator.exe.config
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\bin\Debug\FE Heroes Text Simulator.exe
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\bin\Debug\FE Heroes Text Simulator.pdb
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.csprojAssemblyReference.cache
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE_Heroes_Text_Simulator.Form1.resources
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE_Heroes_Text_Simulator.Properties.Resources.resources
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.csproj.GenerateResource.cache
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.csproj.CoreCompileInputs.cache
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.exe
+C:\Users\ngarc\Documents\GitHub\FE-Heroes-Text-Simulator\FE Heroes Text Simulator\obj\Debug\FE Heroes Text Simulator.pdb

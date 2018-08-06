@@ -128,12 +128,12 @@ namespace FE_Heroes_Text_Simulator
             g.DrawImage(Properties.Resources.Name_box, 16, 766);
 
             GraphicsPath path = new GraphicsPath();
-            path.AddString(richTextBox_Line1.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 32, new Point(34, 981), StringFormat.GenericDefault);
-            path.AddString(richTextBox_Line2.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 32, new Point(34, 1034), StringFormat.GenericDefault);
-            path.AddString(richTextBox_Line3.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 32, new Point(34, 1087), StringFormat.GenericDefault);
+            path.AddString(richTextBox_Line1.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 981), StringFormat.GenericDefault);
+            path.AddString(richTextBox_Line2.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1034), StringFormat.GenericDefault);
+            path.AddString(richTextBox_Line3.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1087), StringFormat.GenericDefault);
 
             GraphicsPath path2 = new GraphicsPath();
-            path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 32, new Point(206, 868), stringFormat);
+            path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 34, new Point(206, 868), stringFormat);
 
             Pen pen = new Pen(Color.FromArgb(15, 30, 40), 5);
             Pen pen2 = new Pen(Color.FromArgb(50, 30, 10), 5);
