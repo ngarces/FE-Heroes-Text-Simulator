@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FE_Heroes_Text_Simulator;
 using System.Drawing.Drawing2D;
 
 namespace FE_Heroes_Text_Simulator
@@ -31,7 +24,7 @@ namespace FE_Heroes_Text_Simulator
 
             pictureBox.Image = new Bitmap(pictureBox.Width, pictureBox.Height);
 
-            comboBox_BG.Items.Add("");
+            comboBox_BG.Items.Add("");      //populates the combox for backgrounds
             foreach (string entry in backgrounds)
             {
                 comboBox_BG.Items.Add(entry);
@@ -42,7 +35,7 @@ namespace FE_Heroes_Text_Simulator
 
         private void button_ImportUnit_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog
+            OpenFileDialog ofd = new OpenFileDialog     //prompts user to open file
             {
                 Filter = "Image Files (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG"
             };
@@ -100,17 +93,16 @@ namespace FE_Heroes_Text_Simulator
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-            if (backgroundImage != null)
+            if (backgroundImage != null)    //if comboBox for background isn't null
             {
-                if (checkBox_ResizeBG.Checked)
+                if (checkBox_ResizeBG.Checked)      //draws resized image
                 {
                     g.DrawImage(resizedBackground, -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
                 }
-                else
+                else    //draws image without resizing
                 {
                     g.DrawImage(backgroundImage, -(backgroundImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
                 }
-                
             }
 
 
@@ -129,12 +121,12 @@ namespace FE_Heroes_Text_Simulator
             g.DrawImage(Properties.Resources.Text_box, 0, 890);
             g.DrawImage(Properties.Resources.Name_box, 16, 766);
 
-            GraphicsPath path = new GraphicsPath();
+            GraphicsPath path = new GraphicsPath();     //draws text lines
             path.AddString(richTextBox_Line1.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 981), StringFormat.GenericDefault);
             path.AddString(richTextBox_Line2.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1034), StringFormat.GenericDefault);
             path.AddString(richTextBox_Line3.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1087), StringFormat.GenericDefault);
 
-            GraphicsPath path2 = new GraphicsPath();
+            GraphicsPath path2 = new GraphicsPath();    //draws name
             path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 34, new Point(206, 868), stringFormat);
 
             Pen pen = new Pen(Color.FromArgb(15, 30, 40), 5);
@@ -209,14 +201,22 @@ namespace FE_Heroes_Text_Simulator
 
         private void comboBox_BG_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string resourceName = comboBox_BG.Text;
-            resourceName = resourceName.Replace(" ", "_");
-            resourceName = resourceName.Replace("(", "_");
-            resourceName = resourceName.Replace(")", "_");
-            resourceName = resourceName.Replace(".", "_");
-            backgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(resourceName);
-            resizedBackground = resizeImage(backgroundImage, (int)(backgroundImage.Width * (1280f / backgroundImage.Height)), 1280);
-
+            if (!string.IsNullOrEmpty(comboBox_BG.Text))
+            {
+                string resourceName = comboBox_BG.Text;
+                if (resourceName.Contains(" "))
+                    resourceName = resourceName.Replace(" ", "_");
+                if (resourceName.Contains("("))
+                    resourceName = resourceName.Replace("(", "_");
+                if (resourceName.Contains(")"))
+                    resourceName = resourceName.Replace(")", "_");
+                if (resourceName.Contains("."))
+                    resourceName = resourceName.Replace(".", "_");
+                backgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(resourceName);
+                resizedBackground = resizeImage(backgroundImage, (int)(backgroundImage.Width * (1280f / backgroundImage.Height)), 1280);
+            }
+            else
+                backgroundImage = null;
             refresh_Picturebox();
         }
 

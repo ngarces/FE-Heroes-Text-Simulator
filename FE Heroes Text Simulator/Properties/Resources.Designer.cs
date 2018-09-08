@@ -83,6 +83,36 @@ namespace FE_Heroes_Text_Simulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Brave {
+            get {
+                object obj = ResourceManager.GetObject("Brave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brave__Forest_ {
+            get {
+                object obj = ResourceManager.GetObject("Brave__Forest_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Castle {
+            get {
+                object obj = ResourceManager.GetObject("Castle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Castle_1 {
             get {
                 object obj = ResourceManager.GetObject("Castle_1", resourceCulture);
@@ -153,9 +183,29 @@ namespace FE_Heroes_Text_Simulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Forest__Night_ {
+            get {
+                object obj = ResourceManager.GetObject("Forest__Night_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Forging_Bonds {
             get {
                 object obj = ResourceManager.GetObject("Forging_Bonds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gaiden_Castle {
+            get {
+                object obj = ResourceManager.GetObject("Gaiden_Castle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +236,26 @@ namespace FE_Heroes_Text_Simulator.Properties {
         internal static System.Drawing.Bitmap Hero_Page__Summoner_Support_ {
             get {
                 object obj = ResourceManager.GetObject("Hero_Page__Summoner_Support_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hoshido_Castle {
+            get {
+                object obj = ResourceManager.GetObject("Hoshido_Castle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hoshido_Summer {
+            get {
+                object obj = ResourceManager.GetObject("Hoshido_Summer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +293,79 @@ namespace FE_Heroes_Text_Simulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Múspell {
+            get {
+                object obj = ResourceManager.GetObject("Múspell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Múspell_Castle {
+            get {
+                object obj = ResourceManager.GetObject("Múspell_Castle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Múspell_Forest__Night_ {
+            get {
+                object obj = ResourceManager.GetObject("Múspell_Forest__Night_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Múspell_Temple {
+            get {
+                object obj = ResourceManager.GetObject("Múspell_Temple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Name_box {
             get {
                 object obj = ResourceManager.GetObject("Name_box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_Forest {
+            get {
+                object obj = ResourceManager.GetObject("Plains_Forest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_Forest__Inside_ {
+            get {
+                object obj = ResourceManager.GetObject("Plains_Forest__Inside_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plains_Sea {
+            get {
+                object obj = ResourceManager.GetObject("Plains_Sea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +436,16 @@ namespace FE_Heroes_Text_Simulator.Properties {
         internal static System.Drawing.Bitmap Training_Tower {
             get {
                 object obj = ResourceManager.GetObject("Training_Tower", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Volcano {
+            get {
+                object obj = ResourceManager.GetObject("Volcano", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

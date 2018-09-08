@@ -40,5 +40,29 @@ namespace FE_Heroes_Text_Simulator
         {
             return backgrounds;
         }
+
+        private readonly List<string> conversationBackgrounds = new List<string>()
+        {
+            "Brave",
+            "Brave (Forest)",
+            "Castle",
+            "Forest (Night)",
+            "Gaiden Castle",
+            "Hoshido Castle",
+            "Hoshido Summer",
+            "Múspell",
+            "Múspell Castle",
+            "Múspell Forest (Night)",
+            "Múspell Temple",
+            "Plains Forest",
+            "Plains Forest (Inside)",
+            "Plains Sea",
+            "Volcano"
+        };
+
+        public List<string> GetConversationBackgrounds()
+        {
+            return conversationBackgrounds;
+        }
     }
 }

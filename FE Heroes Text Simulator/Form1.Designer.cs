@@ -57,6 +57,7 @@
             this.button_ClearUnit = new System.Windows.Forms.Button();
             this.checkBox_ResizeUnit = new System.Windows.Forms.CheckBox();
             this.checkBox_ResizeBG = new System.Windows.Forms.CheckBox();
+            this.comboBox_BG2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitY)).BeginInit();
@@ -224,7 +225,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(736, 246);
+            this.label6.Location = new System.Drawing.Point(738, 273);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 19;
@@ -251,7 +252,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(819, 264);
+            this.label9.Location = new System.Drawing.Point(821, 291);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(14, 13);
             this.label9.TabIndex = 25;
@@ -260,7 +261,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(736, 264);
+            this.label10.Location = new System.Drawing.Point(738, 291);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(14, 13);
             this.label10.TabIndex = 24;
@@ -268,7 +269,7 @@
             // 
             // numericUpDown_BGY
             // 
-            this.numericUpDown_BGY.Location = new System.Drawing.Point(839, 262);
+            this.numericUpDown_BGY.Location = new System.Drawing.Point(841, 289);
             this.numericUpDown_BGY.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -286,7 +287,7 @@
             // 
             // numericUpDown_BGX
             // 
-            this.numericUpDown_BGX.Location = new System.Drawing.Point(756, 262);
+            this.numericUpDown_BGX.Location = new System.Drawing.Point(758, 289);
             this.numericUpDown_BGX.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -304,7 +305,7 @@
             // 
             // button_Save
             // 
-            this.button_Save.Location = new System.Drawing.Point(737, 300);
+            this.button_Save.Location = new System.Drawing.Point(739, 327);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(75, 23);
             this.button_Save.TabIndex = 26;
@@ -344,7 +345,7 @@
             this.checkBox_ResizeBG.AutoSize = true;
             this.checkBox_ResizeBG.Checked = true;
             this.checkBox_ResizeBG.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_ResizeBG.Location = new System.Drawing.Point(902, 265);
+            this.checkBox_ResizeBG.Location = new System.Drawing.Point(904, 292);
             this.checkBox_ResizeBG.Name = "checkBox_ResizeBG";
             this.checkBox_ResizeBG.Size = new System.Drawing.Size(58, 17);
             this.checkBox_ResizeBG.TabIndex = 30;
@@ -352,12 +353,21 @@
             this.checkBox_ResizeBG.UseVisualStyleBackColor = true;
             this.checkBox_ResizeBG.CheckedChanged += new System.EventHandler(this.checkBox_ResizeBG_CheckedChanged);
             // 
+            // comboBox_BG2
+            // 
+            this.comboBox_BG2.FormattingEnabled = true;
+            this.comboBox_BG2.Location = new System.Drawing.Point(739, 249);
+            this.comboBox_BG2.Name = "comboBox_BG2";
+            this.comboBox_BG2.Size = new System.Drawing.Size(181, 21);
+            this.comboBox_BG2.TabIndex = 31;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1064, 749);
+            this.Controls.Add(this.comboBox_BG2);
             this.Controls.Add(this.checkBox_ResizeBG);
             this.Controls.Add(this.checkBox_ResizeUnit);
             this.Controls.Add(this.button_ClearUnit);
@@ -427,6 +437,7 @@
         private System.Windows.Forms.Button button_ClearUnit;
         private System.Windows.Forms.CheckBox checkBox_ResizeUnit;
         private System.Windows.Forms.CheckBox checkBox_ResizeBG;
+        private System.Windows.Forms.ComboBox comboBox_BG2;
     }
 }
 

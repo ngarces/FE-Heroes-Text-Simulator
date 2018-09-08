@@ -167,5 +167,50 @@
   <ItemGroup>
     <None Include="Resources\Icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Brave %28Forest%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Brave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Forest %28Night%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Gaiden Castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Hoshido Castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Hoshido Summer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Muspell Castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Muspell Forest %28Night%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Muspell Temple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Muspell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Plains Forest %28Inside%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Plains Forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Plains Sea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Volcano.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

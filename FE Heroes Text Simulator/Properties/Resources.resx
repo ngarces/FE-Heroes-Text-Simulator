@@ -124,6 +124,15 @@
   <data name="Arena" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Brave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Brave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brave__Forest_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Brave (Forest).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Castle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Castle_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Castle 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,8 +154,14 @@
   <data name="Dialogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dialogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Forest__Night_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Forest (Night).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Forging_Bonds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Forging Bonds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gaiden_Castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Gaiden Castle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Grand_Conquests" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grand Conquests.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +172,12 @@
   <data name="Hero_Page__Summoner_Support_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hero Page (Summoner Support).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hoshido_Castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Hoshido Castle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hoshido_Summer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Hoshido Summer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,8 +187,29 @@
   <data name="Misc__Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Misc. Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Múspell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Muspell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Múspell_Castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Muspell Castle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Múspell_Forest__Night_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Muspell Forest (Night).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Múspell_Temple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Muspell Temple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Name_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Name box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_Forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Plains Forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_Forest__Inside_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Plains Forest (Inside).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plains_Sea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Plains Sea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -189,6 +231,9 @@
   </data>
   <data name="Training_Tower" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Training Tower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volcano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conversation Backgrounds\Volcano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Voting_Gauntlet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Voting Gauntlet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
