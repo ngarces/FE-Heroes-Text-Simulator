@@ -10,9 +10,11 @@ namespace FE_Heroes_Text_Simulator
     public partial class Form1 : Form
     {
         public Bitmap backgroundImage;
+        public Bitmap conversationBackground;
         public Bitmap resizedBackground;
         public Bitmap unitImage;
         public Bitmap resizedUnit;
+
 
         Lists BGList = new Lists();
 
@@ -24,10 +26,17 @@ namespace FE_Heroes_Text_Simulator
 
             pictureBox.Image = new Bitmap(pictureBox.Width, pictureBox.Height);
 
-            comboBox_BG.Items.Add("");      //populates the combox for backgrounds
+            comboBox_BG.Items.Add("");      //populates the combo box for backgrounds
             foreach (string entry in backgrounds)
             {
                 comboBox_BG.Items.Add(entry);
+            }
+
+            backgrounds = BGList.GetConversationBackgrounds();
+            comboBox_BG2.Items.Add("");
+            foreach (string entry in backgrounds)
+            {
+                comboBox_BG2.Items.Add(entry);
             }
 
             refresh_Picturebox();
@@ -95,7 +104,15 @@ namespace FE_Heroes_Text_Simulator
 
             if (backgroundImage != null)    //if comboBox for background isn't null
             {
-                if (checkBox_ResizeBG.Checked)      //draws resized image
+                if (checkBox_ResizeBG.Checked && checkBox_Darken.Checked)      //draws resized image darkened
+                {
+                    g.DrawImage(SetBrightness(resizedBackground, -60), -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
+                }
+                else if (checkBox_Darken.Checked)
+                {
+                    g.DrawImage(SetBrightness(backgroundImage, -60), -(backgroundImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
+                }
+                else if (checkBox_ResizeBG.Checked)
                 {
                     g.DrawImage(resizedBackground, -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
                 }
@@ -105,6 +122,11 @@ namespace FE_Heroes_Text_Simulator
                 }
             }
 
+            if (conversationBackground != null)
+            {
+                g.DrawImage(conversationBackground, -(conversationBackground.Width - pictureBox.Width) / 2f, 157, conversationBackground.Width, conversationBackground.Height);
+
+            }
 
             if (unitImage != null)
             {
@@ -121,12 +143,12 @@ namespace FE_Heroes_Text_Simulator
             g.DrawImage(Properties.Resources.Text_box, 0, 890);
             g.DrawImage(Properties.Resources.Name_box, 16, 766);
 
-            GraphicsPath path = new GraphicsPath();     //draws text lines
+            GraphicsPath path = new GraphicsPath();     //draw text lines
             path.AddString(richTextBox_Line1.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 981), StringFormat.GenericDefault);
             path.AddString(richTextBox_Line2.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1034), StringFormat.GenericDefault);
             path.AddString(richTextBox_Line3.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1087), StringFormat.GenericDefault);
 
-            GraphicsPath path2 = new GraphicsPath();    //draws name
+            GraphicsPath path2 = new GraphicsPath();    //draw name
             path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 34, new Point(206, 868), stringFormat);
 
             Pen pen = new Pen(Color.FromArgb(15, 30, 40), 5);
@@ -138,8 +160,6 @@ namespace FE_Heroes_Text_Simulator
             SolidBrush brush = new SolidBrush(Color.FromArgb(255, 255, 255));
             g.FillPath(brush, path);
             g.FillPath(brush, path2);
-
-
 
             pictureBox.Image = bmp;
         }
@@ -243,6 +263,62 @@ namespace FE_Heroes_Text_Simulator
 
         private void checkBox_ResizeBG_CheckedChanged(object sender, EventArgs e)
         {
+            refresh_Picturebox();
+        }
+
+        private void checkBox_Darken_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        public Bitmap SetBrightness(Bitmap bmp, int brightness)
+        {
+            if (brightness < -255) brightness = -255;
+            if (brightness > 255) brightness = 255;
+
+            Bitmap tempBmp = bmp;
+
+            float finalValue = (float)brightness / 255.0f;
+
+            Bitmap newBmp = new Bitmap(tempBmp.Width, tempBmp.Height);
+
+            Graphics g = Graphics.FromImage(newBmp);
+
+            float[][] floatColorMatrix = {
+                new float[] {1, 0, 0, 0, 0},
+                new float[] {0, 1, 0, 0, 0},
+                new float[] {0, 0, 1, 0, 0},
+                new float[] {0, 0, 0, 1, 0},
+                new float[] {finalValue, finalValue, finalValue, 0, 1}
+            };
+
+            ColorMatrix newColorMatrix = new ColorMatrix(floatColorMatrix);
+            ImageAttributes attributes = new ImageAttributes();
+            attributes.SetColorMatrix(newColorMatrix);
+
+            g.DrawImage(tempBmp, new Rectangle(0, 0, tempBmp.Width, tempBmp.Height), 0, 0, tempBmp.Width, tempBmp.Height, GraphicsUnit.Pixel, attributes);
+
+            return newBmp;
+        }
+
+        private void comboBox_BG2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(comboBox_BG2.Text))
+            {
+                string resourceName = comboBox_BG2.Text;
+                if (resourceName.Contains(" "))
+                    resourceName = resourceName.Replace(" ", "_");
+                if (resourceName.Contains("("))
+                    resourceName = resourceName.Replace("(", "_");
+                if (resourceName.Contains(")"))
+                    resourceName = resourceName.Replace(")", "_");
+                if (resourceName.Contains("."))
+                    resourceName = resourceName.Replace(".", "_");
+                conversationBackground = (Bitmap)Properties.Resources.ResourceManager.GetObject(resourceName);
+                conversationBackground = resizeImage(conversationBackground, 1066, 453);
+            }
+            else
+                conversationBackground = null;
             refresh_Picturebox();
         }
     }
