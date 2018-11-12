@@ -212,5 +212,23 @@
   <ItemGroup>
     <None Include="Resources\Conversation Backgrounds\Volcano.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether Raids 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether Raids 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether Raids 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether Raids 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether Raids 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conversation Backgrounds\Dream Valla.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

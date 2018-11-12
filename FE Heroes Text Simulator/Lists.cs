@@ -6,6 +6,11 @@ namespace FE_Heroes_Text_Simulator
     {
         private readonly List<string> backgrounds = new List<string>()
         {
+            "Aether Raids 1",
+            "Aether Raids 2",
+            "Aether Raids 3",
+            "Aether Raids 4",
+            "Aether Raids 5",
             "Allies Menu",
             "Arena",
             "Castle 1",
@@ -42,6 +47,7 @@ namespace FE_Heroes_Text_Simulator
             "Brave",
             "Brave (Forest)",
             "Castle",
+            "Dream Valla",
             "Forest (Night)",
             "Gaiden Castle",
             "Hoshido Castle",

@@ -63,6 +63,56 @@ namespace FE_Heroes_Text_Simulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aether_Raids_1 {
+            get {
+                object obj = ResourceManager.GetObject("Aether_Raids_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Aether_Raids_2 {
+            get {
+                object obj = ResourceManager.GetObject("Aether_Raids_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Aether_Raids_3 {
+            get {
+                object obj = ResourceManager.GetObject("Aether_Raids_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Aether_Raids_4 {
+            get {
+                object obj = ResourceManager.GetObject("Aether_Raids_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Aether_Raids_5 {
+            get {
+                object obj = ResourceManager.GetObject("Aether_Raids_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Allies_Menu {
             get {
                 object obj = ResourceManager.GetObject("Allies_Menu", resourceCulture);
@@ -176,6 +226,16 @@ namespace FE_Heroes_Text_Simulator.Properties {
         internal static System.Drawing.Bitmap Dialogue {
             get {
                 object obj = ResourceManager.GetObject("Dialogue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dream_Valla {
+            get {
+                object obj = ResourceManager.GetObject("Dream_Valla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
