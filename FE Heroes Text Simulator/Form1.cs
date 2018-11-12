@@ -106,11 +106,11 @@ namespace FE_Heroes_Text_Simulator
             {
                 if (checkBox_ResizeBG.Checked && checkBox_Darken.Checked)      //draws resized image darkened
                 {
-                    g.DrawImage(SetBrightness(resizedBackground, -60), -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
+                    g.DrawImage(SetLightness(resizedBackground, 0.5f), -(resizedBackground.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, resizedBackground.Width, resizedBackground.Height);
                 }
                 else if (checkBox_Darken.Checked)
                 {
-                    g.DrawImage(SetBrightness(backgroundImage, -60), -(backgroundImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
+                    g.DrawImage(SetLightness(backgroundImage, 0.5f), -(backgroundImage.Width - pictureBox.Width) / 2f + (float)numericUpDown_BGX.Value, (float)numericUpDown_BGY.Value, backgroundImage.Width, backgroundImage.Height);
                 }
                 else if (checkBox_ResizeBG.Checked)
                 {
@@ -271,25 +271,20 @@ namespace FE_Heroes_Text_Simulator
             refresh_Picturebox();
         }
 
-        public Bitmap SetBrightness(Bitmap bmp, int brightness)
+        public Bitmap SetLightness(Bitmap bmp, float lightness)
         {
-            if (brightness < -255) brightness = -255;
-            if (brightness > 255) brightness = 255;
-
             Bitmap tempBmp = bmp;
-
-            float finalValue = (float)brightness / 255.0f;
 
             Bitmap newBmp = new Bitmap(tempBmp.Width, tempBmp.Height);
 
             Graphics g = Graphics.FromImage(newBmp);
 
             float[][] floatColorMatrix = {
-                new float[] {1, 0, 0, 0, 0},
-                new float[] {0, 1, 0, 0, 0},
-                new float[] {0, 0, 1, 0, 0},
+                new float[] {lightness, 0, 0, 0, 50},
+                new float[] {0, lightness, 0, 0, 50},
+                new float[] {0, 0, lightness, 0, 50},
                 new float[] {0, 0, 0, 1, 0},
-                new float[] {finalValue, finalValue, finalValue, 0, 1}
+                new float[] {0, 0, 0, 0, 1}
             };
 
             ColorMatrix newColorMatrix = new ColorMatrix(floatColorMatrix);
