@@ -59,7 +59,7 @@ namespace FE_Heroes_Text_Simulator
             "Plains Forest",
             "Plains Forest (Inside)",
             "Plains Sea",
-            "Volcano"
+            "Volcano",
         };
 
         public List<string> GetConversationBackgrounds()

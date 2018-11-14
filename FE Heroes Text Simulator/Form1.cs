@@ -289,6 +289,31 @@ namespace FE_Heroes_Text_Simulator
             refresh_Picturebox();
         }
 
+        public Bitmap SetLightness(Bitmap bmp, float lightness)
+        {
+            Bitmap tempBmp = bmp;
+
+            Bitmap newBmp = new Bitmap(tempBmp.Width, tempBmp.Height);
+
+            Graphics g = Graphics.FromImage(newBmp);
+
+            float[][] floatColorMatrix = {
+                new float[] {lightness, 0, 0, 0, 50},
+                new float[] {0, lightness, 0, 0, 50},
+                new float[] {0, 0, lightness, 0, 50},
+                new float[] {0, 0, 0, 1, 0},
+                new float[] {0, 0, 0, 0, 1}
+            };
+
+            ColorMatrix newColorMatrix = new ColorMatrix(floatColorMatrix);
+            ImageAttributes attributes = new ImageAttributes();
+            attributes.SetColorMatrix(newColorMatrix);
+
+            g.DrawImage(tempBmp, new Rectangle(0, 0, tempBmp.Width, tempBmp.Height), 0, 0, tempBmp.Width, tempBmp.Height, GraphicsUnit.Pixel, attributes);
+
+            return newBmp;
+        }
+
         private void numericUpDown_BGX_ValueChanged(object sender, EventArgs e)
         {
             refresh_Picturebox();
@@ -320,31 +345,6 @@ namespace FE_Heroes_Text_Simulator
             refresh_Picturebox();
         }
 
-        public Bitmap SetLightness(Bitmap bmp, float lightness)
-        {
-            Bitmap tempBmp = bmp;
-
-            Bitmap newBmp = new Bitmap(tempBmp.Width, tempBmp.Height);
-
-            Graphics g = Graphics.FromImage(newBmp);
-
-            float[][] floatColorMatrix = {
-                new float[] {lightness, 0, 0, 0, 50},
-                new float[] {0, lightness, 0, 0, 50},
-                new float[] {0, 0, lightness, 0, 50},
-                new float[] {0, 0, 0, 1, 0},
-                new float[] {0, 0, 0, 0, 1}
-            };
-
-            ColorMatrix newColorMatrix = new ColorMatrix(floatColorMatrix);
-            ImageAttributes attributes = new ImageAttributes();
-            attributes.SetColorMatrix(newColorMatrix);
-
-            g.DrawImage(tempBmp, new Rectangle(0, 0, tempBmp.Width, tempBmp.Height), 0, 0, tempBmp.Width, tempBmp.Height, GraphicsUnit.Pixel, attributes);
-
-            return newBmp;
-        }
-
         private void comboBox_BG2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(comboBox_BG2.Text))
@@ -370,6 +370,7 @@ namespace FE_Heroes_Text_Simulator
         {
             richTextBox_Title.Enabled = false;
             groupBox_Rarity.Enabled = false;
+            checkBox_Darken.Checked = false;
             comboBox_BG.Text = "Summon";
             comboBox_BG2.SelectedIndex = 0;
             refresh_Picturebox();
@@ -379,6 +380,9 @@ namespace FE_Heroes_Text_Simulator
         {
             richTextBox_Title.Enabled = true;
             groupBox_Rarity.Enabled = true;
+            checkBox_ResizeBG.Checked = true;
+            numericUpDown_BGX.Value = 0;
+            numericUpDown_BGY.Value = 0;
             refresh_Picturebox();
         }
 

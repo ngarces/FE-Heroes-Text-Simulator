@@ -519,7 +519,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1098, 749);
+            this.ClientSize = new System.Drawing.Size(1081, 749);
             this.Controls.Add(this.groupBox_Rarity);
             this.Controls.Add(this.richTextBox_Title);
             this.Controls.Add(this.label11);
