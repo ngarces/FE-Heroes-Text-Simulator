@@ -59,11 +59,23 @@
             this.checkBox_ResizeBG = new System.Windows.Forms.CheckBox();
             this.comboBox_BG2 = new System.Windows.Forms.ComboBox();
             this.checkBox_Darken = new System.Windows.Forms.CheckBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.richTextBox_Title = new System.Windows.Forms.RichTextBox();
+            this.groupBox_Rarity = new System.Windows.Forms.GroupBox();
+            this.radioButton_None = new System.Windows.Forms.RadioButton();
+            this.radioButton_1Star = new System.Windows.Forms.RadioButton();
+            this.radioButton_2Star = new System.Windows.Forms.RadioButton();
+            this.radioButton_3Star = new System.Windows.Forms.RadioButton();
+            this.radioButton_4Star = new System.Windows.Forms.RadioButton();
+            this.radioButton_5Star = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_BGY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_BGX)).BeginInit();
+            this.groupBox_Rarity.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox
@@ -79,7 +91,7 @@
             // 
             // richTextBox_Name
             // 
-            this.richTextBox_Name.Location = new System.Drawing.Point(738, 93);
+            this.richTextBox_Name.Location = new System.Drawing.Point(739, 171);
             this.richTextBox_Name.Name = "richTextBox_Name";
             this.richTextBox_Name.Size = new System.Drawing.Size(100, 20);
             this.richTextBox_Name.TabIndex = 2;
@@ -88,7 +100,7 @@
             // 
             // richTextBox_Line1
             // 
-            this.richTextBox_Line1.Location = new System.Drawing.Point(778, 119);
+            this.richTextBox_Line1.Location = new System.Drawing.Point(779, 197);
             this.richTextBox_Line1.Name = "richTextBox_Line1";
             this.richTextBox_Line1.Size = new System.Drawing.Size(256, 20);
             this.richTextBox_Line1.TabIndex = 3;
@@ -97,7 +109,7 @@
             // 
             // richTextBox_Line2
             // 
-            this.richTextBox_Line2.Location = new System.Drawing.Point(778, 145);
+            this.richTextBox_Line2.Location = new System.Drawing.Point(779, 223);
             this.richTextBox_Line2.Name = "richTextBox_Line2";
             this.richTextBox_Line2.Size = new System.Drawing.Size(256, 20);
             this.richTextBox_Line2.TabIndex = 4;
@@ -106,7 +118,7 @@
             // 
             // richTextBox_Line3
             // 
-            this.richTextBox_Line3.Location = new System.Drawing.Point(778, 171);
+            this.richTextBox_Line3.Location = new System.Drawing.Point(779, 249);
             this.richTextBox_Line3.Name = "richTextBox_Line3";
             this.richTextBox_Line3.Size = new System.Drawing.Size(256, 20);
             this.richTextBox_Line3.TabIndex = 5;
@@ -116,7 +128,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(736, 122);
+            this.label2.Location = new System.Drawing.Point(737, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 7;
@@ -125,7 +137,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(736, 148);
+            this.label3.Location = new System.Drawing.Point(737, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 8;
@@ -134,7 +146,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(736, 171);
+            this.label4.Location = new System.Drawing.Point(737, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 9;
@@ -142,7 +154,7 @@
             // 
             // button_ImportUnit
             // 
-            this.button_ImportUnit.Location = new System.Drawing.Point(738, 12);
+            this.button_ImportUnit.Location = new System.Drawing.Point(738, 51);
             this.button_ImportUnit.Name = "button_ImportUnit";
             this.button_ImportUnit.Size = new System.Drawing.Size(108, 23);
             this.button_ImportUnit.TabIndex = 10;
@@ -152,7 +164,7 @@
             // 
             // button_ImportBG
             // 
-            this.button_ImportBG.Location = new System.Drawing.Point(926, 222);
+            this.button_ImportBG.Location = new System.Drawing.Point(927, 300);
             this.button_ImportBG.Name = "button_ImportBG";
             this.button_ImportBG.Size = new System.Drawing.Size(108, 23);
             this.button_ImportBG.TabIndex = 11;
@@ -163,7 +175,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(736, 206);
+            this.label1.Location = new System.Drawing.Point(737, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 12;
@@ -172,7 +184,7 @@
             // comboBox_BG
             // 
             this.comboBox_BG.FormattingEnabled = true;
-            this.comboBox_BG.Location = new System.Drawing.Point(739, 222);
+            this.comboBox_BG.Location = new System.Drawing.Point(740, 300);
             this.comboBox_BG.Name = "comboBox_BG";
             this.comboBox_BG.Size = new System.Drawing.Size(181, 21);
             this.comboBox_BG.TabIndex = 13;
@@ -180,7 +192,7 @@
             // 
             // numericUpDown_UnitX
             // 
-            this.numericUpDown_UnitX.Location = new System.Drawing.Point(756, 54);
+            this.numericUpDown_UnitX.Location = new System.Drawing.Point(756, 93);
             this.numericUpDown_UnitX.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -198,7 +210,7 @@
             // 
             // numericUpDown_UnitY
             // 
-            this.numericUpDown_UnitY.Location = new System.Drawing.Point(839, 54);
+            this.numericUpDown_UnitY.Location = new System.Drawing.Point(839, 93);
             this.numericUpDown_UnitY.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -217,7 +229,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(736, 38);
+            this.label5.Location = new System.Drawing.Point(736, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 18;
@@ -226,7 +238,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(736, 296);
+            this.label6.Location = new System.Drawing.Point(737, 374);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 19;
@@ -235,7 +247,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(736, 56);
+            this.label7.Location = new System.Drawing.Point(736, 95);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(14, 13);
             this.label7.TabIndex = 20;
@@ -244,7 +256,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(819, 56);
+            this.label8.Location = new System.Drawing.Point(819, 95);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 21;
@@ -253,7 +265,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(819, 314);
+            this.label9.Location = new System.Drawing.Point(820, 392);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(14, 13);
             this.label9.TabIndex = 25;
@@ -262,7 +274,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(736, 314);
+            this.label10.Location = new System.Drawing.Point(737, 392);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(14, 13);
             this.label10.TabIndex = 24;
@@ -270,7 +282,7 @@
             // 
             // numericUpDown_BGY
             // 
-            this.numericUpDown_BGY.Location = new System.Drawing.Point(839, 312);
+            this.numericUpDown_BGY.Location = new System.Drawing.Point(840, 390);
             this.numericUpDown_BGY.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -288,7 +300,7 @@
             // 
             // numericUpDown_BGX
             // 
-            this.numericUpDown_BGX.Location = new System.Drawing.Point(756, 312);
+            this.numericUpDown_BGX.Location = new System.Drawing.Point(757, 390);
             this.numericUpDown_BGX.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -306,7 +318,7 @@
             // 
             // button_Save
             // 
-            this.button_Save.Location = new System.Drawing.Point(737, 350);
+            this.button_Save.Location = new System.Drawing.Point(738, 428);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(75, 23);
             this.button_Save.TabIndex = 26;
@@ -320,7 +332,7 @@
             // 
             // button_ClearUnit
             // 
-            this.button_ClearUnit.Location = new System.Drawing.Point(852, 12);
+            this.button_ClearUnit.Location = new System.Drawing.Point(852, 51);
             this.button_ClearUnit.Name = "button_ClearUnit";
             this.button_ClearUnit.Size = new System.Drawing.Size(108, 23);
             this.button_ClearUnit.TabIndex = 27;
@@ -333,7 +345,7 @@
             this.checkBox_ResizeUnit.AutoSize = true;
             this.checkBox_ResizeUnit.Checked = true;
             this.checkBox_ResizeUnit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_ResizeUnit.Location = new System.Drawing.Point(902, 56);
+            this.checkBox_ResizeUnit.Location = new System.Drawing.Point(902, 95);
             this.checkBox_ResizeUnit.Name = "checkBox_ResizeUnit";
             this.checkBox_ResizeUnit.Size = new System.Drawing.Size(58, 17);
             this.checkBox_ResizeUnit.TabIndex = 29;
@@ -346,7 +358,7 @@
             this.checkBox_ResizeBG.AutoSize = true;
             this.checkBox_ResizeBG.Checked = true;
             this.checkBox_ResizeBG.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_ResizeBG.Location = new System.Drawing.Point(902, 315);
+            this.checkBox_ResizeBG.Location = new System.Drawing.Point(903, 393);
             this.checkBox_ResizeBG.Name = "checkBox_ResizeBG";
             this.checkBox_ResizeBG.Size = new System.Drawing.Size(58, 17);
             this.checkBox_ResizeBG.TabIndex = 30;
@@ -357,7 +369,7 @@
             // comboBox_BG2
             // 
             this.comboBox_BG2.FormattingEnabled = true;
-            this.comboBox_BG2.Location = new System.Drawing.Point(739, 272);
+            this.comboBox_BG2.Location = new System.Drawing.Point(740, 350);
             this.comboBox_BG2.Name = "comboBox_BG2";
             this.comboBox_BG2.Size = new System.Drawing.Size(181, 21);
             this.comboBox_BG2.TabIndex = 31;
@@ -366,7 +378,7 @@
             // checkBox_Darken
             // 
             this.checkBox_Darken.AutoSize = true;
-            this.checkBox_Darken.Location = new System.Drawing.Point(739, 249);
+            this.checkBox_Darken.Location = new System.Drawing.Point(740, 327);
             this.checkBox_Darken.Name = "checkBox_Darken";
             this.checkBox_Darken.Size = new System.Drawing.Size(61, 17);
             this.checkBox_Darken.TabIndex = 32;
@@ -374,12 +386,145 @@
             this.checkBox_Darken.UseVisualStyleBackColor = true;
             this.checkBox_Darken.CheckedChanged += new System.EventHandler(this.checkBox_Darken_CheckedChanged);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(739, 28);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(67, 17);
+            this.radioButton1.TabIndex = 34;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Dialogue";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(812, 28);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(80, 17);
+            this.radioButton2.TabIndex = 35;
+            this.radioButton2.Text = "Summoning";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(736, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 13);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "Mode";
+            // 
+            // richTextBox_Title
+            // 
+            this.richTextBox_Title.Enabled = false;
+            this.richTextBox_Title.Location = new System.Drawing.Point(845, 171);
+            this.richTextBox_Title.Name = "richTextBox_Title";
+            this.richTextBox_Title.Size = new System.Drawing.Size(190, 20);
+            this.richTextBox_Title.TabIndex = 37;
+            this.richTextBox_Title.Text = "Title";
+            this.richTextBox_Title.TextChanged += new System.EventHandler(this.richTextBox_Title_TextChanged);
+            // 
+            // groupBox_Rarity
+            // 
+            this.groupBox_Rarity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox_Rarity.Controls.Add(this.radioButton_None);
+            this.groupBox_Rarity.Controls.Add(this.radioButton_1Star);
+            this.groupBox_Rarity.Controls.Add(this.radioButton_2Star);
+            this.groupBox_Rarity.Controls.Add(this.radioButton_3Star);
+            this.groupBox_Rarity.Controls.Add(this.radioButton_4Star);
+            this.groupBox_Rarity.Controls.Add(this.radioButton_5Star);
+            this.groupBox_Rarity.Enabled = false;
+            this.groupBox_Rarity.Location = new System.Drawing.Point(738, 119);
+            this.groupBox_Rarity.Name = "groupBox_Rarity";
+            this.groupBox_Rarity.Size = new System.Drawing.Size(297, 46);
+            this.groupBox_Rarity.TabIndex = 38;
+            this.groupBox_Rarity.TabStop = false;
+            this.groupBox_Rarity.Text = "Rarity";
+            // 
+            // radioButton_None
+            // 
+            this.radioButton_None.AutoSize = true;
+            this.radioButton_None.Location = new System.Drawing.Point(191, 19);
+            this.radioButton_None.Name = "radioButton_None";
+            this.radioButton_None.Size = new System.Drawing.Size(51, 17);
+            this.radioButton_None.TabIndex = 44;
+            this.radioButton_None.Text = "None";
+            this.radioButton_None.UseVisualStyleBackColor = true;
+            this.radioButton_None.CheckedChanged += new System.EventHandler(this.radioButton_None_CheckedChanged);
+            // 
+            // radioButton_1Star
+            // 
+            this.radioButton_1Star.AutoSize = true;
+            this.radioButton_1Star.Location = new System.Drawing.Point(154, 19);
+            this.radioButton_1Star.Name = "radioButton_1Star";
+            this.radioButton_1Star.Size = new System.Drawing.Size(31, 17);
+            this.radioButton_1Star.TabIndex = 43;
+            this.radioButton_1Star.Text = "1";
+            this.radioButton_1Star.UseVisualStyleBackColor = true;
+            this.radioButton_1Star.CheckedChanged += new System.EventHandler(this.radioButton_1Star_CheckedChanged);
+            // 
+            // radioButton_2Star
+            // 
+            this.radioButton_2Star.AutoSize = true;
+            this.radioButton_2Star.Location = new System.Drawing.Point(117, 19);
+            this.radioButton_2Star.Name = "radioButton_2Star";
+            this.radioButton_2Star.Size = new System.Drawing.Size(31, 17);
+            this.radioButton_2Star.TabIndex = 42;
+            this.radioButton_2Star.Text = "2";
+            this.radioButton_2Star.UseVisualStyleBackColor = true;
+            this.radioButton_2Star.CheckedChanged += new System.EventHandler(this.radioButton_2Star_CheckedChanged);
+            // 
+            // radioButton_3Star
+            // 
+            this.radioButton_3Star.AutoSize = true;
+            this.radioButton_3Star.Location = new System.Drawing.Point(80, 19);
+            this.radioButton_3Star.Name = "radioButton_3Star";
+            this.radioButton_3Star.Size = new System.Drawing.Size(31, 17);
+            this.radioButton_3Star.TabIndex = 41;
+            this.radioButton_3Star.Text = "3";
+            this.radioButton_3Star.UseVisualStyleBackColor = true;
+            this.radioButton_3Star.CheckedChanged += new System.EventHandler(this.radioButton_3Star_CheckedChanged);
+            // 
+            // radioButton_4Star
+            // 
+            this.radioButton_4Star.AutoSize = true;
+            this.radioButton_4Star.Location = new System.Drawing.Point(43, 19);
+            this.radioButton_4Star.Name = "radioButton_4Star";
+            this.radioButton_4Star.Size = new System.Drawing.Size(31, 17);
+            this.radioButton_4Star.TabIndex = 40;
+            this.radioButton_4Star.Text = "4";
+            this.radioButton_4Star.UseVisualStyleBackColor = true;
+            this.radioButton_4Star.CheckedChanged += new System.EventHandler(this.radioButton_4Star_CheckedChanged);
+            // 
+            // radioButton_5Star
+            // 
+            this.radioButton_5Star.AutoSize = true;
+            this.radioButton_5Star.Checked = true;
+            this.radioButton_5Star.Location = new System.Drawing.Point(6, 19);
+            this.radioButton_5Star.Name = "radioButton_5Star";
+            this.radioButton_5Star.Size = new System.Drawing.Size(31, 17);
+            this.radioButton_5Star.TabIndex = 39;
+            this.radioButton_5Star.TabStop = true;
+            this.radioButton_5Star.Text = "5";
+            this.radioButton_5Star.UseVisualStyleBackColor = true;
+            this.radioButton_5Star.CheckedChanged += new System.EventHandler(this.radioButton_5Star_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1064, 749);
+            this.ClientSize = new System.Drawing.Size(1098, 749);
+            this.Controls.Add(this.groupBox_Rarity);
+            this.Controls.Add(this.richTextBox_Title);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.checkBox_Darken);
             this.Controls.Add(this.comboBox_BG2);
             this.Controls.Add(this.checkBox_ResizeBG);
@@ -416,6 +561,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_UnitY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_BGY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_BGX)).EndInit();
+            this.groupBox_Rarity.ResumeLayout(false);
+            this.groupBox_Rarity.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,6 +600,17 @@
         private System.Windows.Forms.CheckBox checkBox_ResizeBG;
         private System.Windows.Forms.ComboBox comboBox_BG2;
         private System.Windows.Forms.CheckBox checkBox_Darken;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RichTextBox richTextBox_Title;
+        private System.Windows.Forms.GroupBox groupBox_Rarity;
+        private System.Windows.Forms.RadioButton radioButton_None;
+        private System.Windows.Forms.RadioButton radioButton_1Star;
+        private System.Windows.Forms.RadioButton radioButton_2Star;
+        private System.Windows.Forms.RadioButton radioButton_3Star;
+        private System.Windows.Forms.RadioButton radioButton_4Star;
+        private System.Windows.Forms.RadioButton radioButton_5Star;
     }
 }
 

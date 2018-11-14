@@ -141,7 +141,50 @@ namespace FE_Heroes_Text_Simulator
             }
 
             g.DrawImage(Properties.Resources.Text_box, 0, 890);
-            g.DrawImage(Properties.Resources.Name_box, 16, 766);
+            if (radioButton1.Checked)
+            {
+                g.DrawImage(Properties.Resources.Name_box, 16, 766);
+            }
+            else if (radioButton2.Checked)
+            {
+                Bitmap nameBox = (Bitmap)Properties.Resources.ResourceManager.GetObject("Summon_name_box");
+                g.DrawImage(nameBox, -(nameBox.Width - pictureBox.Width) / 2f, 666);
+                if (radioButton_5Star.Checked == true)
+                {
+                    Bitmap star = resizeImage((Bitmap)Properties.Resources.ResourceManager.GetObject("_5Star"), 72, 72);
+                    for (int i = 0; i < 5; i++)
+                    {
+                        g.DrawImage(star, 218 + (i * 53), 681);
+                    }
+                }
+                else if (radioButton_4Star.Checked == true)
+                {
+                    Bitmap star = resizeImage((Bitmap)Properties.Resources.ResourceManager.GetObject("_4Star"), 72, 72);
+                    for (int i = 0; i < 4; i++)
+                    {
+                        g.DrawImage(star, 244 + (i * 53), 681);
+                    }
+                }
+                else if (radioButton_3Star.Checked == true)
+                {
+                    Bitmap star = resizeImage((Bitmap)Properties.Resources.ResourceManager.GetObject("_3Star"), 72, 72);
+                    for (int i = 0; i < 3; i++)
+                    {
+                        g.DrawImage(star, 271 + (i * 53), 681);
+                    }
+                }
+                else if (radioButton_2Star.Checked == true)
+                {
+                    Bitmap star = resizeImage((Bitmap)Properties.Resources.ResourceManager.GetObject("_2Star"), 72, 72);
+                    g.DrawImage(star, 350, 681);
+                    g.DrawImage(star, 297, 681);
+                }
+                else if (radioButton_1Star.Checked == true)
+                {
+                    Bitmap star = resizeImage((Bitmap)Properties.Resources.ResourceManager.GetObject("_1Star"), 72, 72);
+                    g.DrawImage(star, -(star.Width - pictureBox.Width) / 2f, 681);
+                }
+            }
 
             GraphicsPath path = new GraphicsPath();     //draw text lines
             path.AddString(richTextBox_Line1.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 981), StringFormat.GenericDefault);
@@ -149,7 +192,13 @@ namespace FE_Heroes_Text_Simulator
             path.AddString(richTextBox_Line3.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(34, 1087), StringFormat.GenericDefault);
 
             GraphicsPath path2 = new GraphicsPath();    //draw name
-            path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 34, new Point(206, 868), stringFormat);
+            if (radioButton1.Checked)
+                path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 34, new Point(206, 868), stringFormat);
+            else if (radioButton2.Checked)
+            {
+                path2.AddString(richTextBox_Title.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 31, new Point(pictureBox.Width / 2, 778), stringFormat);
+                path2.AddString(richTextBox_Name.Text, new FontFamily("nintendoP_Skip-D_003"), (int)FontStyle.Regular, 40, new Point(pictureBox.Width / 2, 866), stringFormat);
+            }
 
             Pen pen = new Pen(Color.FromArgb(15, 30, 40), 5);
             Pen pen2 = new Pen(Color.FromArgb(50, 30, 10), 5);
@@ -314,6 +363,57 @@ namespace FE_Heroes_Text_Simulator
             }
             else
                 conversationBackground = null;
+            refresh_Picturebox();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            richTextBox_Title.Enabled = false;
+            groupBox_Rarity.Enabled = false;
+            comboBox_BG.Text = "Summon";
+            comboBox_BG2.SelectedIndex = 0;
+            refresh_Picturebox();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            richTextBox_Title.Enabled = true;
+            groupBox_Rarity.Enabled = true;
+            refresh_Picturebox();
+        }
+
+        private void richTextBox_Title_TextChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_5Star_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_4Star_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_3Star_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_2Star_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_1Star_CheckedChanged(object sender, EventArgs e)
+        {
+            refresh_Picturebox();
+        }
+
+        private void radioButton_None_CheckedChanged(object sender, EventArgs e)
+        {
             refresh_Picturebox();
         }
     }

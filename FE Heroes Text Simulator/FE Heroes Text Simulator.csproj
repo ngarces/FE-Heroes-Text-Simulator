@@ -230,5 +230,23 @@
   <ItemGroup>
     <None Include="Resources\Conversation Backgrounds\Dream Valla.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Summon name box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5Star.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -238,6 +238,9 @@
   <data name="Summoning_Altar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Summoning Altar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Summon_name_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Summon name box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tap_Battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tap Battle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -261,5 +264,20 @@
   </data>
   <data name="World_Map_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\World Map 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5Star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,6 +63,56 @@ namespace FE_Heroes_Text_Simulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1Star {
+            get {
+                object obj = ResourceManager.GetObject("_1Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2Star {
+            get {
+                object obj = ResourceManager.GetObject("_2Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3Star {
+            get {
+                object obj = ResourceManager.GetObject("_3Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4Star {
+            get {
+                object obj = ResourceManager.GetObject("_4Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5Star {
+            get {
+                object obj = ResourceManager.GetObject("_5Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Aether_Raids_1 {
             get {
                 object obj = ResourceManager.GetObject("Aether_Raids_1", resourceCulture);
@@ -446,6 +496,16 @@ namespace FE_Heroes_Text_Simulator.Properties {
         internal static System.Drawing.Bitmap Summon {
             get {
                 object obj = ResourceManager.GetObject("Summon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Summon_name_box {
+            get {
+                object obj = ResourceManager.GetObject("Summon_name_box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
